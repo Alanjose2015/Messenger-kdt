@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESSENGER KDT - Cadetería</title>
+    <!-- Tu archivo de estilos local (Carga inmediata) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MESSENGER KDT</h1>
+        <p>Cadetería Express - San Miguel de Tucumán</p>
+    </header>
+
+    <main class="app-contenedor">
+        <!-- Detalles del Envío -->
+        <section class="tarjeta-formulario">
+            <h2>Detalles del Envío</h2>
+            <div class="grupo-campo">
+                <label for="origen">Dirección de Origen (Retiro):</label>
+                <input type="text" id="origen" placeholder="Ej: Barrio Norte, Av. Avellaneda 200" value="Plaza Urquiza">
+            </div>
+            <div class="grupo-campo">
+                <label for="destino">Dirección de Destino (Entrega):</label>
+                <input type="text" id="destino" placeholder="Ej: Av. Mate de Luna 2300" value="Plaza Belgrano">
+            </div>
+        </section>
+
+        <!-- Información de Operación y Pago mediante WhatsApp -->
+        <section class="tarjeta-formulario tarjeta-pago">
+            <h2>💳 Coordinación de Operación</h2>
+            <p class="instruccion-pago">¡Solicitar información de pago en la base de operaciones al enviar el pedido.</p>
+        </section>
+
+        <!-- Mapa de Cobertura -->
+        <section class="tarjeta-formulario tarjeta-seguimiento">
+            <h2>Mapa de Cobertura (En Vivo)</h2>
+            <div id="map-container" class="contenedor-mapa-fijo"></div>
+            <p class="texto-seguimiento" id="estado-mapa">Cargando mapa de San Miguel de Tucumán...</p>
+            <button id="btn-contingencia-seguimiento" class="btn-solicitar" style="display: none; background-color: #3b82f6; margin-top: 10px; font-size: 14px; padding: 10px;">
+                🔍 Solicitar Seguimiento por WhatsApp
+            </button>
+        </section>
+
+        <!-- Tarifa y Acción -->
+        <section class="resumen-tarifa">
+            <h3>Costo Estimado</h3>
+            <div id="precioEstimado">$0</div>
+            <p class="nota">*El precio final puede variar según la distancia real recorrida.</p>
+            <button class="btn-solicitar" id="btn-whatsapp">🏍 Solicitar Cadete y Pagar por WhatsApp</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="marca-agua-logo">
+            <div class="icono-logo">📦</div>
+            <div class="texto-logo">
+                <h3>KDT EXPRESS</h3>
+                <p>Sistema de Mensajería</p>
+            </div>
+        </div>
+        <a href="mailto:soporte@kdtexpress.com" class="btn-correo">Contactar Soporte Técnico</a>
+    </footer>
+
+    <!-- CARGA ASÍNCRONA INTELIGENTE AL FINAL: Tu código arranca instantáneamente -->
+    <script src="app.js"></script>
+</body>
+</html>
