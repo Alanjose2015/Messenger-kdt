@@ -1,0 +1,38 @@
+/* === AQUÍ VA TODO TU CSS ORIGINAL SIN TOCAR UNA SOLA LÍNEA === */
+* { box-sizing: border-box; }
+body { background-color: #f1f5f9; color: #0f172a; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+header { background-color: #1e293b; color: #f59e0b; padding: 20px 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-bottom: 3px solid #f59e0b; }
+header h1 { margin: 0; font-size: 26px; font-weight: 900; letter-spacing: 1px; }
+header p { margin: 5px 0 0 0; font-size: 13px; color: #94a3b8; }
+.app-contenedor { max-width: 500px; margin: 0 auto; padding-bottom: 30px; }
+.tarjeta-formulario { background: white; margin: 15px; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+.tarjeta-formulario h2 { font-size: 16px; margin-top: 0; margin-bottom: 15px; color: #475569; border-bottom: 2px solid #f1f5f9; padding-bottom: 5px; }
+.grupo-campo { display: flex; flex-direction: column; margin-bottom: 15px; width: 100%; }
+label { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #1e293b; text-align: left; }
+input[type="text"], select, textarea { width: 100%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px; background-color: #f8fafc; font-family: inherit; }
+textarea { resize: none; height: 90px; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #f59e0b; background-color: #fff; }
+.tarjeta-pago { border-left: 4px solid #f59e0b; }
+.texto-pago { font-size: 14px; color: #1e293b; margin: 0 0 8px 0; font-weight: 500; }
+.instruccion-pago { font-size: 12px; color: #ef4444; font-style: italic; margin: 0; }
+.tarjeta-seguimiento { border-left: 4px solid #3b82f6; }
+.texto-seguimiento { font-size: 13px; color: #334155; line-height: 1.4; margin-top: 10px; }
+.resumen-tarifa { background: #0f172a; color: white; margin: 15px; padding: 20px; border-radius: 12px; text-align: center; }
+.resumen-tarifa h3 { margin: 0 0 5px 0; font-size: 18px; color: #94a3b8; }
+#precioEstimado { color: #10b981; font-size: 26px; font-weight: bold; }
+.nota { font-size: 11px; color: #64748b; margin-bottom: 15px; }
+.btn-solicitar { width: 100%; background-color: #22c55e; color: white; border: none; padding: 14px; border-radius: 8px; font-weight: bold; font-size: 16px; cursor: pointer; box-shadow: 0 4px 10px rgba(34, 197, 94, 0.2); transition: background 0.2s; }
+.btn-solicitar:active { background-color: #16a34a; }
+footer { margin: 30px 15px 0 15px; padding: 20px 15px; background-color: #1e293b; border-top: 2px solid #334155; text-align: center; border-radius: 12px; }
+.marca-agua-logo { display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0.4; margin-bottom: 15px; }
+.icono-logo { font-size: 32px; }
+.texto-logo { text-align: left; }
+.texto-logo h3 { margin: 0; font-size: 16px; color: #f59e0b; font-weight: 800; letter-spacing: 0.5px; }
+.texto-logo p { margin: 2px 0 0 0; font-size: 11px; color: #94a3b8; font-weight: bold; text-transform: uppercase; }
+.btn-correo { display: block; width: 100%; background-color: #334155; color: #cbd5e1; text-decoration: none; padding: 11px; font-size: 13px; font-weight: 600; border-radius: 6px; border: 1px solid #475569; }
+.btn-correo:active { background-color: #475569; color: #ffffff; }
+
+/* Ajuste específico para que los mapas interactivos no rompan la estética */
+.leaflet-container {
+    z-index: 1 !important;
+}
